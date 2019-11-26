@@ -1,0 +1,7 @@
+{
+  "extends": ["universe/web", "react-app", "airbnb/hooks"],
+  "rules": {
+    "import/no-duplicates": 1
+  },
+  "plugins": ["import"]
+}

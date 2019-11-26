@@ -1,31 +1,72 @@
 {
-  "name": "test",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "client",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"analyze": "yarn build:dev && source-map-explorer 'build/static/js/*.js'",
+		"build": "cross-env GENERATE_SOURCEMAP=false yarn run build:dev",
+		"build:dev": "react-app-rewired build",
+		"dev": "react-app-rewired start",
+		"eject": "react-script eject",
+		"lint": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
+		"serve": "serve -s build",
+		"sort": "sort-package-json package.json",
+		"start": "react-app-rewired start",
+		"sync": "syncyarnlock -s -k -g -l",
+		"test": "react-app-rewired test",
+		"update": "yarn upgrade-interactive"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"dependencies": {
+		"@loadable/component": "^5.10.3",
+		"@material-ui/core": "^4.7.0",
+		"@sentry/browser": "^5.9.1",
+		"autotrack": "^2.4.1",
+		"connected-react-router": "^6.6.1",
+		"flat": "^5.0.0",
+		"history": "^4.10.1",
+		"jss": "^10.0.0",
+		"jss-rtl": "^0.3.0",
+		"prop-types": "^15.7.2",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-ga": "^2.7.0",
+		"react-helmet-async": "^1.0.4",
+		"react-intl": "^3.6.2",
+		"react-redux": "^7.1.3",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "3.2.0",
+		"redux": "^4.0.4",
+		"redux-thunk": "^2.3.0"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.7.4",
+		"@babel/plugin-proposal-optional-chaining": "^7.7.4",
+		"@types/react": "^16.9.13",
+		"babel-plugin-optimize-clsx": "^2.5.0",
+		"cross-env": "^6.0.3",
+		"customize-cra": "^0.9.1",
+		"eslint-config-airbnb": "^18.0.1",
+		"eslint-config-universe": "^2.0.0",
+		"eslint-plugin-import": "^2.18.2",
+		"prettier": "^1.19.1",
+		"react-app-rewired": "^2.1.5",
+		"source-map-explorer": "^2.1.1",
+		"syncyarnlock": "^1.0.19",
+		"typescript": "^3.7.2"
+	},
+	"engines": {
+		"yarn": ">= 1.17.3"
+	}
 }

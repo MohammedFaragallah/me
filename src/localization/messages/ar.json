@@ -1,0 +1,11 @@
+{
+	"hello": {
+		"message": "مرحيا"
+	},
+	"label": {
+		"notfound": "غير موجود"
+	},
+	"pageTitle": {
+		"home": "الرئيسية"
+	}
+}

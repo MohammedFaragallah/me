@@ -1,0 +1,11 @@
+{
+	"hello": {
+		"message": "Welcome"
+	},
+	"label": {
+		"notfound": "Not Found"
+	},
+	"pageTitle": {
+		"home": "Home"
+	}
+}
