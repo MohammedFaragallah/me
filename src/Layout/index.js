@@ -1,6 +1,7 @@
 import { Box, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -21,7 +22,10 @@ const Layout = props => {
 	return (
 		<Box overflow="hidden" className={classes.root}>
 			<Container>
-				<Box>nav</Box>
+				<Box>
+					<Link to="/">Home</Link>
+					<Link to="/javascript30">Javascript30</Link>
+				</Box>
 				{children}
 				<Box>footer</Box>
 			</Container>

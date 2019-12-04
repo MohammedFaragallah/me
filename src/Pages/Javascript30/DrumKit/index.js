@@ -15,7 +15,7 @@ const sounds = [
 	{ key: 'l', name: 'tink' },
 ];
 
-const Index = () => {
+const DrumKit = () => {
 	return (
 		<Box
 			display="flex"
@@ -30,4 +30,4 @@ const Index = () => {
 	);
 };
 
-export default Index;
+export default DrumKit;

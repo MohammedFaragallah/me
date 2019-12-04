@@ -1,11 +1,17 @@
-import { Link } from '@material-ui/core';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import slugify from 'slugify';
 
-const Home = () => {
+const Home = props => {
+	const { items } = props;
 	const base = '/javascript30';
 	return (
 		<>
-			<Link href={`${base}/drum-kit`}>DrumKit</Link>
+			{items.map(({ name }) => (
+				<Link key={name} to={`${base}/${slugify(name)}`}>
+					{name}
+				</Link>
+			))}
 		</>
 	);
 };

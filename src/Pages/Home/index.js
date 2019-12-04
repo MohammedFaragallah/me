@@ -1,7 +1,7 @@
-import { Link } from '@material-ui/core';
 import { Page } from 'Components';
 import React from 'react';
 import { useIntl } from 'react-intl';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	const intl = useIntl();
@@ -12,7 +12,7 @@ const Home = () => {
 
 	return (
 		<Page>
-			<Link href="/javascript30">Javascript 30 {message}</Link>
+			<Link to="/javascript30">Javascript 30 {message}</Link>
 		</Page>
 	);
 };
