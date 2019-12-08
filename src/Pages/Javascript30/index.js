@@ -1,13 +1,15 @@
 import Clock from 'Pages/Javascript30/Clock';
 import DrumKit from 'Pages/Javascript30/DrumKit';
 import Home from 'Pages/Javascript30/Home';
+import Variables from 'Pages/Javascript30/Variables';
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import slugify from 'slugify';
 
 const items = [
-	{ component: DrumKit, name: 'Drum Kit' },
 	{ component: Clock, name: 'Clock' },
+	{ component: DrumKit, name: 'Drum Kit' },
+	{ component: Variables, name: 'Variables' },
 ];
 
 const Exercises = props => {
