@@ -1,5 +1,4 @@
-import { Typography } from '@material-ui/core';
-import { CenteredMessage, Page } from 'Components';
+import { CenteredMessage, Page, Typography } from 'Components';
 import React from 'react';
 import { useIntl } from 'react-intl';
 

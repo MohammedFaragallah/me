@@ -1,3 +1,5 @@
+import 'App.css';
+
 import { StylesProvider, createGenerateClassName } from '@material-ui/styles';
 import jssPreset from '@material-ui/styles/jssPreset';
 import ThemeProvider from '@material-ui/styles/ThemeProvider';
@@ -7,7 +9,7 @@ import { history } from 'Helpers';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
 import { DefaultLanguage } from 'localization';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { IntlProvider } from 'react-intl';
 import { useSelector } from 'react-redux';
@@ -24,10 +26,6 @@ const generateClassName = createGenerateClassName({
 const App = props => {
 	const { locale, messages } = useSelector(LocaleSelector);
 	const { code, dir } = locale;
-
-	useEffect(() => {
-		import('Helpers/analytics');
-	}, []);
 
 	const flatMessages = flatten(messages);
 

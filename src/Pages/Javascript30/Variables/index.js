@@ -9,13 +9,15 @@ const initial = { spacing: 1, blur: 10, base: '#000001' };
 
 const LOCAL_STORAGE_KEY = 'variables';
 
-const useStyles = makeStyles(theme => ({
-	image: {
-		padding: ({ spacing }) => theme.spacing(spacing),
-		filter: ({ blur }) => `blur(${blur}px)`,
-		background: ({ base }) => base,
-	},
-}));
+const useStyles = makeStyles(theme => {
+	return {
+		image: {
+			padding: ({ spacing }) => theme.spacing(spacing),
+			filter: ({ blur }) => `blur(${blur}px)`,
+			background: ({ base }) => base,
+		},
+	};
+});
 
 const Variables = () => {
 	const formData =
@@ -27,7 +29,7 @@ const Variables = () => {
 	return (
 		<>
 			<h2>
-				Update CSS Variables with <span className="hl">JS</span>
+				Update CSS Variables with <span>JS</span>
 			</h2>
 			<Formik
 				initialValues={formData}

@@ -1,6 +1,6 @@
 import Clock from 'Pages/Javascript30/Clock';
 import DrumKit from 'Pages/Javascript30/DrumKit';
-import Home from 'Pages/Javascript30/Home';
+import Javascript30Home from 'Pages/Javascript30/Home';
 import Variables from 'Pages/Javascript30/Variables';
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
@@ -12,14 +12,14 @@ const items = [
 	{ component: Variables, name: 'Variables' },
 ];
 
-const Exercises = props => {
+const Javascript30 = props => {
 	const { match } = props;
 
 	return (
 		<Switch>
 			<Route
 				path={match.path}
-				component={props => <Home items={items} {...props} />}
+				component={props => <Javascript30Home items={items} {...props} />}
 				exact
 			/>
 			{items.map(({ component, name }) => (
@@ -34,4 +34,4 @@ const Exercises = props => {
 	);
 };
 
-export default Exercises;
+export default Javascript30;

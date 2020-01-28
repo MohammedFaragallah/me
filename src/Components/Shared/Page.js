@@ -1,4 +1,3 @@
-import { Box, Container, Typography } from '@material-ui/core';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSelector } from 'react-redux';
@@ -7,14 +6,13 @@ import { LocaleSelector } from 'Selectors';
 // TODO: move bread crump here as a global option
 
 const Page = props => {
-	const { container, children, titles = [] } = props;
-
+	const { children, titles = [], ...rest } = props;
 	const {
 		locale: { code, dir },
 	} = useSelector(LocaleSelector);
 
 	return (
-		<Container component="main" {...container}>
+		<main {...rest}>
 			<Helmet>
 				<html lang={code} />
 				<title>
@@ -26,25 +24,12 @@ const Page = props => {
 				<meta property="og:type" content="website" />
 			</Helmet>
 
-			<Box mt={{ sm: 8 }}>
-				<Box
-					display="none"
-					displayPrint="flex"
-					flexDirection="column"
-					alignItems="center"
-				>
-					<Typography weight={700}>{titles?.[0]}</Typography>
-				</Box>
-				{children}
-			</Box>
-		</Container>
+			{children}
+		</main>
 	);
 };
 
 Page.defaultProps = {
-	container: {},
-	customDisplayPrint: false,
-	loading: false,
 	title: [],
 };
 
