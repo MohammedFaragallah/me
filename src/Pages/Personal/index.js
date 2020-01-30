@@ -6,14 +6,13 @@ import {
 	SwipeableDrawer,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Avatar from 'assets/images/avatar.jpg';
 import color from 'color';
 import { Icon, Page, Typography } from 'Components';
 import { DEVELOPMENT } from 'Constants';
-import About from 'Pages/Personal/About';
-import Home from 'Pages/Personal/Home';
-import Skills from 'Pages/Personal/Skills';
-import Work from 'Pages/Personal/Work';
+import About from 'Pages/Personal/Sections/About';
+import Home from 'Pages/Personal/Sections/Home';
+import Skills from 'Pages/Personal/Sections/Skills';
+import Work from 'Pages/Personal/Sections/Work';
 import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useSelector } from 'react-redux';
@@ -24,7 +23,7 @@ const useStyles = makeStyles(theme => {
 
 	return {
 		avatar: {
-			background: `url('${Avatar}') center/cover no-repeat`,
+			background: `url('${require('assets/images/avatar.jpg')}') center/cover no-repeat`,
 			width: 150,
 			height: 150,
 			borderRadius: 100,
@@ -120,7 +119,7 @@ const Menu = () => {
 	);
 };
 
-const Personal = () => {
+const Personal = props => {
 	const classes = useStyles();
 	const [openedMenu, setMenuOpened] = useState(false);
 

@@ -1,4 +1,4 @@
-import 'App.css';
+import 'fonts.css';
 
 import { StylesProvider, createGenerateClassName } from '@material-ui/styles';
 import jssPreset from '@material-ui/styles/jssPreset';
@@ -20,7 +20,7 @@ import { getTheme } from 'Theme';
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
 const generateClassName = createGenerateClassName({
-	productionPrefix: 'FREGO',
+	productionPrefix: process.env.REACT_APP_NAME,
 });
 
 const App = props => {

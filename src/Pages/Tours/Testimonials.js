@@ -1,8 +1,5 @@
 import { Box, Container, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Keyboard from 'assets/images/keyboard.jpg';
-import VideoMP4 from 'assets/images/video.mp4';
-import VideoWEBM from 'assets/images/video.webm';
 import color from 'color';
 import { Typography } from 'Components';
 import HoverLink from 'Components/HoverLink';
@@ -102,8 +99,7 @@ const Testimonials = () => {
 		>
 			<Box className={classes.bgVideo}>
 				<video className={classes.content} autoPlay muted loop>
-					<source src={VideoMP4} type="video/mp4" />
-					<source src={VideoWEBM} type="video/webm" />
+					<source src={require('assets/images/video.mp4')} type="video/mp4" />
 					Your browser is not supported!
 				</video>
 			</Box>
@@ -117,7 +113,12 @@ const Testimonials = () => {
 						flexDirection="row"
 					>
 						<Box component="figure" className={classes.avatar}>
-							<img src={Keyboard} alt="demo" width="100%" height="100%" />
+							<img
+								src={require('assets/images/keyboard.jpg')}
+								alt="demo"
+								width="100%"
+								height="100%"
+							/>
 							<Box className={classes.caption} component="figcaption">
 								SHIRT
 							</Box>

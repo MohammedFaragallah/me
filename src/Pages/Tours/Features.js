@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Slide } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import FeatureBG from 'assets/images/pens.jpg';
 import color from 'color';
 import { Icon, Typography } from 'Components';
 import Times from 'Components/Times';
@@ -16,7 +15,7 @@ const useStyles = makeStyles(theme => {
 			backgroundImage: `linear-gradient(to right bottom,
 				${color(palette.secondary.dark).alpha(0.8)},
 				${color(palette.secondary.main).alpha(0.8)}),
-				url(${FeatureBG})`,
+				url(${require('assets/images/pens.jpg')})`,
 			backgroundSize: 'cover',
 			backgroundPosition: 'center',
 

@@ -1,6 +1,5 @@
 import { Box, Button, Slide } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Keyboard from 'assets/images/keyboard.jpg';
 import color from 'color';
 import { Link, Typography } from 'Components';
 import { barHeight } from 'Constants';
@@ -15,7 +14,7 @@ const useStyles = makeStyles(theme => {
 			backgroundImage: `linear-gradient(to right bottom,
 			${color(palette.secondary.dark).alpha(0.8)},
 			${color(palette.secondary.main).alpha(0.8)}),
-			url(${Keyboard})`,
+			url(${require('assets/images/keyboard.jpg')})`,
 			backgroundSize: 'cover',
 			backgroundPosition: 'center',
 			clipPath: 'polygon(0 0, 100% 0, 100% 75vh, 0 100%)',

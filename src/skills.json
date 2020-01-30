@@ -1,0 +1,635 @@
+{
+	"framework": [
+		{
+			"name": "Angular",
+			"shortname": "angular",
+			"url": "https://angular.io/",
+			"files": ["angular-icon.svg", "angular.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Apollo",
+			"shortname": "apollostack",
+			"url": "http://www.apollostack.com/",
+			"files": ["apollostack.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Bootstrap",
+			"shortname": "bootstrap",
+			"url": "http://getbootstrap.com/",
+			"files": ["bootstrap.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Bulma",
+			"shortname": "bulma",
+			"url": "https://bulma.io/",
+			"files": ["bulma.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "D3",
+			"shortname": "d3",
+			"url": "http://d3js.org/",
+			"files": ["d3.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Django",
+			"shortname": "django",
+			"url": "https://www.djangoproject.com/",
+			"files": ["django.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Electron",
+			"shortname": "electron",
+			"url": "http://electron.atom.io/",
+			"files": ["electron.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Express",
+			"shortname": "express",
+			"url": "http://expressjs.com/",
+			"files": ["express.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "feathersjs",
+			"shortname": "feathersjs",
+			"url": "http://feathersjs.com/",
+			"files": ["feathersjs.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Gatsby",
+			"shortname": "gatsby",
+			"url": "https://www.gatsbyjs.org/",
+			"files": ["gatsby.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "GraphQL",
+			"shortname": "graphql",
+			"url": "http://graphql.org/",
+			"files": ["graphql.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Handlebars",
+			"shortname": "handlebars",
+			"url": "http://handlebarsjs.com/",
+			"files": ["handlebars.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Jest",
+			"shortname": "jest",
+			"url": "http://facebook.github.io/jest/",
+			"files": ["jest.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Koa",
+			"shortname": "koa",
+			"url": "https://koajs.com",
+			"files": ["koa.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Laravel",
+			"shortname": "laravel",
+			"url": "http://laravel.com/",
+			"files": ["laravel.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Lodash",
+			"shortname": "lodash",
+			"url": "https://lodash.com/",
+			"files": ["lodash.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Loopback",
+			"shortname": "loopback",
+			"url": "http://loopback.io/",
+			"files": ["loopback-icon.svg", "loopback.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Material UI",
+			"shortname": "material-ui",
+			"url": "http://material-ui.com/",
+			"files": ["material-ui.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Moment.js",
+			"shortname": "momentjs",
+			"url": "http://momentjs.com/",
+			"files": ["momentjs.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "NestJS",
+			"shortname": "nestjs",
+			"url": "https://nestjs.com/",
+			"files": ["nestjs.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Next.js",
+			"shortname": "nextjs",
+			"url": "https://zeit.co/next",
+			"files": ["nextjs.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Passport",
+			"shortname": "passport",
+			"url": "http://passportjs.org/",
+			"files": ["passport.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Prisma",
+			"shortname": "prisma",
+			"url": "https://www.prisma.io/",
+			"files": ["prisma.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Puppeteer",
+			"shortname": "puppeteer",
+			"url": "https://developers.google.com/web/tools/puppeteer/",
+			"files": ["puppeteer.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Qt",
+			"shortname": "qt",
+			"url": "http://www.qt.io/",
+			"files": ["qt.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "React",
+			"shortname": "react",
+			"url": "https://facebook.github.io/react/",
+			"files": ["react.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "React/Router",
+			"shortname": "react-router",
+			"url": "https://github.com/rackt/react-router",
+			"files": ["react-router.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Redis",
+			"shortname": "redis",
+			"url": "http://redis.io/",
+			"files": ["redis.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Redux",
+			"shortname": "redux",
+			"url": "http://redux.js.org/",
+			"files": ["redux.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "redux-saga",
+			"shortname": "redux-saga",
+			"url": "https://redux-saga.js.org/",
+			"files": ["redux-saga.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Sequelize",
+			"shortname": "sequelize",
+			"url": "http://sequelizejs.com/",
+			"files": ["sequelize.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Socket.io",
+			"shortname": "socket_io",
+			"url": "http://socket.io/",
+			"files": ["socket.io.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Strapi",
+			"shortname": "strapi",
+			"url": "https://strapi.io/",
+			"files": ["strapi.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Tailwind CSS",
+			"shortname": "tailwindcss",
+			"url": "https://tailwindcss.com/",
+			"files": ["tailwindcss-icon.svg", "tailwindcss.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "WooCommerce",
+			"shortname": "woocommerce",
+			"url": "http://www.woothemes.com/woocommerce/",
+			"files": ["woocommerce.svg"],
+			"type": "framework"
+		},
+		{
+			"name": "Wordpress",
+			"shortname": "wordpress",
+			"url": "https://wordpress.org/",
+			"files": ["wordpress-icon.svg", "wordpress.svg"],
+			"type": "framework"
+		}
+	],
+	"service": [
+		{
+			"name": "Algolia",
+			"shortname": "algolia",
+			"url": "https://www.algolia.com/",
+			"files": ["algolia.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Auth0",
+			"shortname": "auth0",
+			"url": "https://auth0.com/",
+			"files": ["auth0.svg"],
+			"type": "service"
+		},
+		{
+			"name": "AWS",
+			"shortname": "aws",
+			"url": "https://aws.amazon.com/",
+			"files": ["aws.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Bitbucket",
+			"shortname": "bitbucket",
+			"url": "https://bitbucket.org/",
+			"files": ["bitbucket.svg"],
+			"type": "service"
+		},
+		{
+			"name": "CircleCI",
+			"shortname": "circleci",
+			"url": "https://circleci.com/",
+			"files": ["circleci.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Cloudinary",
+			"shortname": "cloudinary",
+			"url": "https://cloudinary.com/",
+			"files": ["cloudinary.svg"],
+			"type": "service"
+		},
+		{
+			"name": "DigitalOcean",
+			"shortname": "digitalocean",
+			"url": "https://www.digitalocean.com/",
+			"files": ["digital-ocean.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Embedly",
+			"shortname": "embedly",
+			"url": "http://embed.ly/",
+			"files": ["embedly.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Firebase",
+			"shortname": "firebase",
+			"url": "https://www.firebase.com/",
+			"files": ["firebase.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Github",
+			"shortname": "github",
+			"url": "https://github.com/",
+			"files": ["github-icon.svg", "github.svg", "github-octocat.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Google Analytics",
+			"shortname": "google-analytics",
+			"url": "http://www.google.com/analytics/",
+			"files": ["google-analytics.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Heroku",
+			"shortname": "heroku",
+			"url": "https://www.heroku.com/",
+			"files": ["heroku-icon.svg", "heroku.svg"],
+			"type": "service"
+		},
+		{
+			"name": "mLab",
+			"shortname": "mLab",
+			"url": "https://mlab.com/",
+			"files": ["mlab.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Moltin",
+			"shortname": "moltin",
+			"url": "https://www.moltin.com/",
+			"files": ["moltin-icon.svg", "moltin.svg"],
+			"type": "service"
+		},
+		{
+			"name": "OneSignal",
+			"shortname": "onesignal",
+			"url": "https://onesignal.com/",
+			"files": ["onesignal.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Sentry",
+			"shortname": "sentry",
+			"url": "https://getsentry.com/welcome/",
+			"files": ["sentry.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Stripe",
+			"shortname": "stripe",
+			"url": "https://stripe.com/",
+			"files": ["stripe.svg"],
+			"type": "service"
+		},
+		{
+			"name": "Travis CI",
+			"shortname": "travis-ci",
+			"url": "https://travis-ci.org/",
+			"files": ["travis-ci.svg"],
+			"type": "service"
+		},
+		{
+			"name": "WakaTime",
+			"shortname": "wakatime",
+			"url": "https://wakatime.com/",
+			"files": ["wakatime.svg"],
+			"type": "service"
+		}
+	],
+	"tool": [
+		{
+			"name": "AppVeyor",
+			"shortname": "appveyor",
+			"url": "https://www.appveyor.com/",
+			"files": ["appveyor.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Babel",
+			"shortname": "babel",
+			"url": "https://babeljs.io/",
+			"files": ["babel.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Codecov",
+			"shortname": "codecov",
+			"url": "http://codecov.io/",
+			"files": ["codecov.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Composer",
+			"shortname": "composer",
+			"url": "https://getcomposer.org/",
+			"files": ["composer.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Coveralls",
+			"shortname": "coveralls",
+			"url": "https://coveralls.io/",
+			"files": ["coveralls.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Emmet",
+			"shortname": "emmet",
+			"url": "http://emmet.io/",
+			"files": ["emmet.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "ESLint",
+			"shortname": "eslint",
+			"url": "http://eslint.org/",
+			"files": ["eslint.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Expo",
+			"shortname": "expo",
+			"url": "https://expo.io/",
+			"files": ["expo.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Font Awesome",
+			"shortname": "font-awesome",
+			"url": "https://fontawesome.com/",
+			"files": ["font-awesome.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Git",
+			"shortname": "git",
+			"url": "https://git-scm.com/",
+			"files": ["git-icon.svg", "git.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "GitKraken",
+			"shortname": "gitkraken",
+			"url": "https://www.gitkraken.com/",
+			"files": ["gitkraken.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "nodemon",
+			"shortname": "nodemon",
+			"url": "http://nodemon.io/",
+			"files": ["nodemon.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "NPM",
+			"shortname": "npm",
+			"url": "https://www.npmjs.com/",
+			"files": ["npm.svg", "npm-2.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "PhpStorm",
+			"shortname": "phpstorm",
+			"url": "https://www.jetbrains.com/phpstorm/",
+			"files": ["phpstorm.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "PM2",
+			"shortname": "pm2",
+			"url": "https://github.com/Unitech/pm2",
+			"files": ["pm2.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Postman",
+			"shortname": "postman",
+			"url": "https://www.getpostman.com/",
+			"files": ["postman.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Prettier",
+			"shortname": "prettier",
+			"url": "https://prettier.io/",
+			"files": ["prettier.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "PyCharm",
+			"shortname": "pycharm",
+			"url": "https://www.jetbrains.com/pycharm/",
+			"files": ["pycharm.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Sass",
+			"shortname": "sass",
+			"url": "http://sass-lang.com/",
+			"files": ["sass.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Storybook",
+			"shortname": "storybook",
+			"url": "https://storybook.js.org/",
+			"files": ["storybook-icon.svg", "storybook.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Terminal",
+			"shortname": "terminal",
+			"url": "https://en.wikipedia.org/wiki/Terminal_emulator",
+			"files": ["terminal.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Visual Studio Code",
+			"shortname": "visual-studio-code",
+			"url": "https://code.visualstudio.com/",
+			"files": ["visual-studio-code.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "webpack",
+			"shortname": "webpack",
+			"url": "http://webpack.github.io/",
+			"files": ["webpack.svg"],
+			"type": "tool"
+		},
+		{
+			"name": "Yarn",
+			"shortname": "yarn",
+			"url": "https://yarnpkg.com/",
+			"files": ["yarn.svg"],
+			"type": "tool"
+		}
+	],
+	"language": [
+		{
+			"name": "CSS3",
+			"shortname": "css-3",
+			"url": "http://www.w3.org/TR/CSS/",
+			"files": ["css-3.svg", "css-3_official.svg"],
+			"type": "language"
+		},
+		{
+			"name": "HTML5",
+			"shortname": "html-5",
+			"url": "http://www.w3.org/TR/html5/",
+			"files": ["html-5.svg"],
+			"type": "language"
+		},
+		{
+			"name": "Javascript (JS)",
+			"shortname": "javascript",
+			"url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+			"files": ["javascript.svg"],
+			"type": "language"
+		},
+		{
+			"name": "Node.js",
+			"shortname": "nodejs",
+			"url": "https://nodejs.org/",
+			"files": ["nodejs-icon.svg", "nodejs.svg"],
+			"type": "language"
+		},
+		{
+			"name": "PHP",
+			"shortname": "php",
+			"url": "http://php.net/",
+			"files": ["php.svg"],
+			"type": "language"
+		},
+		{
+			"name": "Python",
+			"shortname": "python",
+			"url": "https://www.python.org/",
+			"files": ["python.svg"],
+			"type": "language"
+		},
+		{
+			"name": "Typescript",
+			"shortname": "typescript",
+			"url": "https://www.typescriptlang.org/",
+			"files": ["typescript-icon.svg", "typescript.svg"],
+			"type": "language"
+		}
+	],
+	"database": [
+		{
+			"name": "MongoDB",
+			"shortname": "mongodb",
+			"url": "https://www.mongodb.org/",
+			"files": ["mongodb.svg"],
+			"type": "database"
+		},
+		{
+			"name": "PostgreSQL",
+			"shortname": "postgresql",
+			"url": "http://www.postgresql.org/",
+			"files": ["postgresql.svg"],
+			"type": "database"
+		},
+		{
+			"name": "SQLite",
+			"shortname": "sqlite",
+			"url": "http://www.sqlite.org/",
+			"files": ["sqlite.svg"],
+			"type": "database"
+		}
+	]
+}

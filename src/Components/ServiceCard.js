@@ -1,6 +1,5 @@
 import { Box, Button, Dialog, Divider, Fade } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Image from 'assets/images/nat-5.jpg';
 import color from 'color';
 import { Typography } from 'Components';
 import React, { useState } from 'react';
@@ -23,7 +22,7 @@ const useStyles = makeStyles(theme => {
 			backgroundImage: `linear-gradient(to right bottom,
 				${color(palette.secondary.dark)}, 
 				${color(palette.secondary.main)}),
-				url(${Image})`,
+				url(${require('assets/images/nat-5.jpg')})`,
 			height: spacing(25),
 			backgroundBlendMode: 'screen',
 			backgroundSize: 'cover',

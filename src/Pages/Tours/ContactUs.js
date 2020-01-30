@@ -1,5 +1,4 @@
 import { Box, makeStyles } from '@material-ui/core';
-import Image from 'assets/images/nat-10.jpg';
 import color from 'color';
 import { Button } from 'Components';
 import { Field, Form, Formik } from 'formik';
@@ -29,7 +28,7 @@ const useStyles = makeStyles(theme => {
 			${color(palette.common.white).alpha(0.9)} 50%,
 			transparent 50%
 			),
-			url(${Image})`,
+			url(${require('assets/images/nat-10.jpg')})`,
 			backgroundSize: 'cover',
 			borderRadius: spacing(0.5),
 			boxShadow: `0 ${spacing(2)}px ${spacing(4)}px ${color(

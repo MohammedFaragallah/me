@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/styles';
-import profileImage from 'assets/images/profile.jpg';
 import { Field, Formik } from 'formik';
 import React, { useState } from 'react';
 
@@ -71,7 +70,11 @@ const Variables = () => {
 					);
 				}}
 			</Formik>
-			<img className={classes.image} src={profileImage} alt="" />
+			<img
+				className={classes.image}
+				src={require('assets/images/profile.jpg')}
+				alt=""
+			/>
 		</>
 	);
 };

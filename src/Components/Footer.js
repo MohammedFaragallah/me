@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Logo1X from 'assets/images/logo-green-small-1x.png';
 import color from 'color';
 import React from 'react';
 
@@ -66,7 +65,11 @@ const Footer = () => {
 		<Box className={classes.root} component="footer">
 			<Container>
 				<Box className={classes.logoBox}>
-					<img className={classes.logo} alt="Full logo" src={Logo1X} />
+					<img
+						className={classes.logo}
+						alt="Full logo"
+						src={require('assets/images/logo-green-small-1x.png')}
+					/>
 				</Box>
 				<Grid container spacing={2}>
 					<Grid item lg={6}>

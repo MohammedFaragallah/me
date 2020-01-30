@@ -1,6 +1,5 @@
 import { Box, useScrollTrigger } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Logo from 'assets/images/logo-white.png';
 import color from 'color';
 import { Link } from 'Components';
 import React from 'react';
@@ -92,7 +91,11 @@ export const AppBar = () => {
 			{/* // TODO: check current location and use appropriate component */}
 			{/* <Link to="/"> */}
 			<AnchorLink href="#top">
-				<img className={classes.logo} src={Logo} alt="logo" />
+				<img
+					className={classes.logo}
+					src={require('assets/images/logo-white.png')}
+					alt="logo"
+				/>
 			</AnchorLink>
 			{/* </Link> */}
 			<Box display="flex" m={4}>

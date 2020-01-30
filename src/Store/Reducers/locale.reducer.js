@@ -17,6 +17,8 @@ const reducer = (state = initialState, { type, payload }) => {
 	switch (type) {
 		case CHANGE_LANGUAGE: {
 			const locale = getLocale(payload);
+			console.log('TCL: reducer -> locale', locale);
+			console.log('TCL: reducer -> payload', payload);
 
 			return {
 				...state,

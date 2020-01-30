@@ -5,10 +5,12 @@ const initialState = { menuLinks: [] };
 const reducer = (state = initialState, { type, payload }) => {
 	switch (type) {
 		case REGISTER_MENU_ITEM: {
-			return {
-				...state,
-				menuLinks: [...state.menuLinks, payload],
-			};
+			return !state.menuLinks.includes(payload)
+				? {
+						...state,
+						menuLinks: [...state.menuLinks, payload],
+				  }
+				: state;
 		}
 		default: {
 			return state;

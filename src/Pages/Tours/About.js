@@ -1,8 +1,5 @@
 import { Box, Container, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Image1 from 'assets/images/nat-1-large.jpg';
-import Image2 from 'assets/images/nat-2-large.jpg';
-import Image3 from 'assets/images/nat-3-large.jpg';
 import clsx from 'clsx';
 import color from 'color';
 import { Typography } from 'Components';
@@ -85,17 +82,17 @@ const About = () => {
 					</Grid>
 					<Grid className={classes.composition} item md={6} xs={12}>
 						<img
-							src={Image1}
+							src={require('assets/images/nat-1-large.jpg')}
 							alt="first 1"
 							className={clsx(classes.image, classes.firstImage)}
 						/>
 						<img
-							src={Image2}
+							src={require('assets/images/nat-2-large.jpg')}
 							alt="first 2"
 							className={clsx(classes.image, classes.secondImage)}
 						/>
 						<img
-							src={Image3}
+							src={require('assets/images/nat-3-large.jpg')}
 							alt="first 3"
 							className={clsx(classes.image, classes.thirdImage)}
 						/>
