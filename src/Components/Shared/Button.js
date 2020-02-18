@@ -1,5 +1,8 @@
-import { CircularProgress, Button as MuiButton } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import {
+	CircularProgress,
+	Button as MuiButton,
+	makeStyles,
+} from '@material-ui/core';
 import clsx from 'clsx';
 import Color from 'color';
 import { Icon } from 'Components';
@@ -17,6 +20,7 @@ const injectColor = color =>
 
 const useStyles = makeStyles(theme => {
 	const { breakpoints, palette, spacing, shadows } = theme;
+
 	const labelSizes = {
 		small: 14,
 		normal: 16,
