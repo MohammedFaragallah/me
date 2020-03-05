@@ -2,7 +2,7 @@ import {
 	DefaultLanguage,
 	getLocale,
 	getTranslatedMessages,
-} from 'Localization';
+} from 'localization';
 import { ActionTypes, LocaleActions, LocaleState } from 'Store';
 
 const locale = getLocale(DefaultLanguage.code);

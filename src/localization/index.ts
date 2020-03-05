@@ -1,6 +1,6 @@
-import { Direction, Language, Languages } from 'Localization/types';
+import { Direction, Language, Languages } from 'localization/types';
 
-export const LocalizationLanguages: Languages = {
+export const localizationLanguages: Languages = {
 	ar: { code: 'ar', label: 'عربى', dir: Direction.right },
 	en: { code: 'en', label: 'English', dir: Direction.left },
 };
@@ -12,7 +12,7 @@ export const DefaultLanguage: Language = {
 };
 
 export const getTranslatedMessages = (languageCode: Language['code']): object =>
-	Object.assign({}, require(`Localization/messages/${languageCode}`));
+	Object.assign({}, require(`localization/messages/${languageCode}`));
 
 export const getLocale = (languageCode: Language['code']) =>
-	LocalizationLanguages[languageCode];
+	localizationLanguages[languageCode];

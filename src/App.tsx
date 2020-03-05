@@ -8,7 +8,7 @@ import flatten from 'flat';
 import { history } from 'Helpers';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
-import { DefaultLanguage } from 'Localization';
+import { DefaultLanguage } from 'localization';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { IntlProvider } from 'react-intl';

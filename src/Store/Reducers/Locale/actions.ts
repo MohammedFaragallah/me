@@ -1,4 +1,4 @@
-import { Language } from 'Localization/types';
+import { Language } from 'localization/types';
 import { Dispatch } from 'redux';
 import { ActionTypes, ChangeLanguageAction } from 'Store';
 
