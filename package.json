@@ -13,6 +13,7 @@
 		"eject": "react-script eject",
 		"lint": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
 		"push": "yarn && git add . && git commit -m 'save' && git push",
+		"push:heroku": "yarn push -- heroku master",
 		"serve": "serve -s build",
 		"sort": "sort-package-json package.json",
 		"start": "react-scripts start",
