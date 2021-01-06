@@ -2,6 +2,7 @@ import { Container, ContainerProps } from '@material-ui/core';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSelector } from 'react-redux';
+
 import { LocaleSelector } from 'Selectors';
 
 // TODO: move bread crump here as a global option
@@ -24,7 +25,7 @@ export const Page = (props: Props) => {
 				<html lang={code} />
 				<title>{[...titles, REACT_APP_NAME].join(' | ')}</title>
 				<body dir={dir} />
-				<meta property="og:type" content="website" />
+				<meta content="website" property="og:type" />
 			</Helmet>
 			{children}
 		</Container>

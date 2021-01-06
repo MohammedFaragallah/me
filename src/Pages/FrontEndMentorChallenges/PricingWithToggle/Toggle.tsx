@@ -40,7 +40,7 @@ export const Toggle = () => {
 	const [toggle, setToggle] = useState(true);
 	return (
 		<Typography component="div">
-			<Grid component="label" container alignItems="center" spacing={1}>
+			<Grid alignItems="center" component="label" container spacing={1}>
 				<Grid item>Annually</Grid>
 				<Grid item>
 					<Switch checked={toggle} onChange={() => setToggle(!toggle)} />

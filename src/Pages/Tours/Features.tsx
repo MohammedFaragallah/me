@@ -7,10 +7,11 @@ import {
 	makeStyles,
 } from '@material-ui/core';
 import color from 'color';
-import { Icon } from 'Components';
-import Times from 'Components/Times';
 import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
+
+import { Icon } from 'Components';
+import Times from 'Components/Times';
 
 const useStyles = makeStyles(theme => {
 	const { palette, spacing } = theme;
@@ -63,7 +64,7 @@ const Features = () => {
 	const [check, setCheck] = useState(false);
 	return (
 		<Waypoint onEnter={() => setCheck(true)}>
-			<Box id="features" mt={-10} className={classes.root} component="section">
+			<Box className={classes.root} component="section" id="features" mt={-10}>
 				<Grid component={Container} container>
 					<Times times={4}>
 						<Slide direction="up" in={check} timeout={2000}>

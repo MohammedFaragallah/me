@@ -1,6 +1,7 @@
 import { Box, ListItem } from '@material-ui/core';
-import { Icon } from 'Components';
 import React from 'react';
+
+import { Icon } from 'Components';
 
 interface Props {
 	label: string;
@@ -12,7 +13,7 @@ export const InterestItem = (props: Props) => {
 	return (
 		<ListItem button disableGutters>
 			<Icon>arrow_right</Icon>
-			<Box fontSize={18} fontFamily="Brothers">
+			<Box fontFamily="Brothers" fontSize={18}>
 				{label}
 			</Box>
 		</ListItem>

@@ -7,16 +7,16 @@ const CenteredMessage = ({
 	width = '100%',
 }: BoxProps) => (
 	<Box
-		display="flex"
-		flexDirection="column"
 		alignContent="center"
 		alignItems="center"
+		display="flex"
+		flexDirection="column"
+		height={height}
 		justifyContent="center"
 		justifyItems="center"
-		height={height}
-		width={width}
 		minHeight="30vh"
 		overflow="hidden"
+		width={width}
 	>
 		{children}
 	</Box>

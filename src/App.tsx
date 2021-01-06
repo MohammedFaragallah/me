@@ -1,21 +1,22 @@
 import 'fonts.css';
 
 import { StylesProvider, createGenerateClassName } from '@material-ui/styles';
-import jssPreset from '@material-ui/styles/jssPreset';
 import ThemeProvider from '@material-ui/styles/ThemeProvider';
-import { ConnectedRouter } from 'connected-react-router';
+import jssPreset from '@material-ui/styles/jssPreset';
+// import { ConnectedRouter } from 'connected-react-router';
 import flatten from 'flat';
-import { history } from 'Helpers';
 import { create } from 'jss';
 import rtl from 'jss-rtl';
-import { DefaultLanguage } from 'localization';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { IntlProvider } from 'react-intl';
 import { useSelector } from 'react-redux';
+
+// import { history } from 'Helpers';
 import Routes from 'Routes';
 import { LocaleSelector } from 'Selectors';
 import { getTheme } from 'Theme';
+import { DefaultLanguage } from 'localization';
 
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
@@ -40,10 +41,10 @@ const App = () => {
 		>
 			<HelmetProvider>
 				<ThemeProvider theme={getTheme(dir)}>
-					<StylesProvider jss={jss} generateClassName={generateClassName}>
-						<ConnectedRouter history={history}>
-							<Routes />
-						</ConnectedRouter>
+					<StylesProvider generateClassName={generateClassName} jss={jss}>
+						{/* <ConnectedRouter history={history}> */}
+						<Routes />
+						{/* </ConnectedRouter> */}
 					</StylesProvider>
 				</ThemeProvider>
 			</HelmetProvider>

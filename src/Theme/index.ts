@@ -1,6 +1,7 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core';
-import { Language } from 'localization/types';
+
 import { baseTheme } from 'Theme/base';
+import { Language } from 'localization/types';
 
 declare module '@material-ui/core/styles/createMuiTheme' {
 	interface Theme {

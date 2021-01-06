@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => {
 		},
 		media: {
 			backgroundImage: `linear-gradient(to right bottom,
-				${color(palette.secondary.dark)}, 
+				${color(palette.secondary.dark)},
 				${color(palette.secondary.main)}),
 				url(${require('assets/images/nat-5.jpg')})`,
 			height: spacing(25),
@@ -96,18 +96,18 @@ const ProductCard = () => {
 
 	return (
 		<Box
-			width="100%"
-			height="100%"
-			position="relative"
-			onFocus={() => setShowed(true)}
-			onMouseOver={() => setShowed(true)}
-			onMouseLeave={() => setShowed(false)}
 			className={classes.cardRoot}
+			height="100%"
+			onFocus={() => setShowed(true)}
+			onMouseLeave={() => setShowed(false)}
+			onMouseOver={() => setShowed(true)}
+			position="relative"
+			width="100%"
 		>
 			<Box>
 				<Box className={classes.media} />
 				<Typography className={classes.heading}>
-					<Box component="span" className={classes.span}>
+					<Box className={classes.span} component="span">
 						Heading Heading Heading
 					</Box>
 				</Typography>
@@ -120,29 +120,29 @@ const ProductCard = () => {
 			</Box>
 			<Fade in={showed}>
 				<Box
+					alignItems="center"
 					className={classes.back}
 					display="flex"
 					flexDirection="column"
 					justifyContent="center"
-					alignItems="center"
 				>
 					<Box className={classes.priceBox}>
 						<Typography className={classes.priceOnly}>Only</Typography>
 						<Typography className={classes.priceValue}>$297</Typography>
 					</Box>
 					<Button
-						variant="contained"
 						color="primary"
-						style={{ borderRadius: 50 }}
 						onClick={() => setOpen(true)}
+						style={{ borderRadius: 50 }}
+						variant="contained"
 					>
 						Disabled
 					</Button>
 				</Box>
 			</Fade>
 			<Dialog
-				onClose={() => setOpen(false)}
 				aria-labelledby="simple-dialog-title"
+				onClose={() => setOpen(false)}
 				open={open}
 			>
 				<p>project summary</p>

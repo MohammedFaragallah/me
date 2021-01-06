@@ -1,8 +1,9 @@
 import { Box, Fab, Link, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import color from 'color';
-import { Icon } from 'Components';
 import React, { useState } from 'react';
+
+import { Icon } from 'Components';
 
 const useStyles = makeStyles(theme => {
 	const { spacing, palette, zIndex } = theme;
@@ -91,9 +92,9 @@ const Menu = () => {
 	return (
 		<Box position="relative">
 			<Fab
-				color="secondary"
 				aria-label="add"
 				className={classes.button}
+				color="secondary"
 				onClick={() => setChecked(!checked)}
 			>
 				<Icon>{checked ? 'close' : 'menu'}</Icon>
@@ -109,32 +110,32 @@ const Menu = () => {
 			</Box>
 
 			<Box
-				component="nav"
 				className={clsx(classes.nav, checked && classes.showNav)}
+				component="nav"
 			>
 				<ul className={classes.list}>
 					<li className={classes.item}>
-						<Link href="/" className={classes.link}>
+						<Link className={classes.link} href="/">
 							About Natous
 						</Link>
 					</li>
 					<li className={classes.item}>
-						<Link href="/" className={classes.link}>
+						<Link className={classes.link} href="/">
 							Your benfits
 						</Link>
 					</li>
 					<li className={classes.item}>
-						<Link href="/" className={classes.link}>
+						<Link className={classes.link} href="/">
 							Popular tours
 						</Link>
 					</li>
 					<li className={classes.item}>
-						<Link href="/" className={classes.link}>
+						<Link className={classes.link} href="/">
 							Stories
 						</Link>
 					</li>
 					<li className={classes.item}>
-						<Link href="/" className={classes.link}>
+						<Link className={classes.link} href="/">
 							Book now
 						</Link>
 					</li>

@@ -55,21 +55,21 @@ const Variables = () => {
 					return (
 						<form onSubmit={handleSubmit}>
 							<label htmlFor="spacing">Spacing:</label>
-							<Field type="range" name="spacing" min="1" max="20" />
+							<Field max="20" min="1" name="spacing" type="range" />
 
 							<label htmlFor="blur">Blur:</label>
 							<Field
-								type="range"
-								name="blur"
-								min="0"
-								max="25"
 								data-sizing="px"
+								max="25"
+								min="0"
+								name="blur"
+								type="range"
 							/>
 
 							<label htmlFor="base">Base Color</label>
 							<Field component={ColorPicker} name="base" />
 
-							<button type="submit" disabled={isSubmitting}>
+							<button disabled={isSubmitting} type="submit">
 								save
 							</button>
 						</form>
@@ -77,9 +77,9 @@ const Variables = () => {
 				}}
 			</Formik>
 			<img
+				alt=""
 				className={classes.image}
 				src={require('assets/images/profile.jpg')}
-				alt=""
 			/>
 		</>
 	);

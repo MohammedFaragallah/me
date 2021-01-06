@@ -1,8 +1,9 @@
-import FrontEndMentorChallengesHome from 'Pages/FrontEndMentorChallenges/Home';
-import PricingWithToggle from 'Pages/FrontEndMentorChallenges/PricingWithToggle';
 import React from 'react';
 import { Redirect, Route, RouteComponentProps, Switch } from 'react-router-dom';
 import slugify from 'slugify';
+
+import FrontEndMentorChallengesHome from 'Pages/FrontEndMentorChallenges/Home';
+import PricingWithToggle from 'Pages/FrontEndMentorChallenges/PricingWithToggle';
 
 export interface Item {
 	component: React.FC;
@@ -19,17 +20,17 @@ const Challenges = (props: RouteComponentProps) => {
 	return (
 		<Switch>
 			<Route
-				path={match.path}
 				component={(props: RouteComponentProps) => (
 					<FrontEndMentorChallengesHome items={items} {...props} />
 				)}
 				exact
+				path={match.path}
 			/>
 			{items.map(({ component, name }) => (
 				<Route
+					component={component}
 					key={name}
 					path={`${match.path}/${slugify(name.toLowerCase())}`}
-					component={component}
 				/>
 			))}
 			<Redirect to="/notfound" />

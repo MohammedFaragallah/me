@@ -1,5 +1,5 @@
-import { Language } from 'localization/types';
 import { ActionTypes } from 'Store';
+import { Language } from 'localization/types';
 
 export interface LocaleState {
 	locale: Language;

@@ -1,4 +1,6 @@
 import { Container, Grid, Hidden } from '@material-ui/core';
+import React from 'react';
+
 import { Page } from 'Components';
 import About from 'Pages/Tours/About';
 import ContactUs from 'Pages/Tours/ContactUs';
@@ -7,7 +9,6 @@ import Header from 'Pages/Tours/Header';
 import Layout from 'Pages/Tours/Layout';
 import Services from 'Pages/Tours/Services';
 import Testimonials from 'Pages/Tours/Testimonials';
-import React from 'react';
 
 const Home = () => {
 	return (

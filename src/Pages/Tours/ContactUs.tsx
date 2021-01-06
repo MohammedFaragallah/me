@@ -116,14 +116,14 @@ const ContactUs = () => {
 
 	return (
 		<Box
-			id="contact"
-			component="section"
 			bgcolor="grey.200"
-			mt="-20vh"
-			pt={30}
-			pb={5}
-			px={15}
 			className={classes.root}
+			component="section"
+			id="contact"
+			mt="-20vh"
+			pb={5}
+			pt={30}
+			px={15}
 		>
 			<Box className={classes.container}>
 				<Formik
@@ -146,12 +146,12 @@ const ContactUs = () => {
 								<Field
 									className={classes.input}
 									component="input"
-									type="text"
 									id="firstName"
 									name="firstName"
 									placeholder="First Name"
+									type="text"
 								/>
-								<label htmlFor="firstName" className={classes.label}>
+								<label className={classes.label} htmlFor="firstName">
 									First Name
 								</label>
 							</Box>
@@ -159,12 +159,12 @@ const ContactUs = () => {
 								<Field
 									className={classes.input}
 									component="input"
-									type="email"
 									id="email"
 									name="email"
 									placeholder="Email"
+									type="email"
 								/>
-								<label htmlFor="email" className={classes.label}>
+								<label className={classes.label} htmlFor="email">
 									Email
 								</label>
 							</Box>
@@ -174,13 +174,13 @@ const ContactUs = () => {
 										<Field
 											className={classes.radioInput}
 											component="input"
-											type="radio"
 											id={item}
 											name="size"
 											placeholder={item}
+											type="radio"
 										/>
 										<label className={classes.radioLabel} htmlFor={item}>
-											<Box display="flex" alignItems="center">
+											<Box alignItems="center" display="flex">
 												<span className={classes.radio} />
 												{item}
 											</Box>
@@ -188,7 +188,7 @@ const ContactUs = () => {
 									</React.Fragment>
 								))}
 							</Box>
-							// TODO: button to typescript
+							{/* TODO: button to typescript */}
 							{/* <Button
 								aria-label="add comment"
 								color="secondary"

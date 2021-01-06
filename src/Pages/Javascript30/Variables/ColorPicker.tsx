@@ -1,13 +1,13 @@
 import React from 'react';
-import SketchPicker from 'react-color/lib/Sketch';
+import { SketchPicker } from 'react-color';
 
-export const ColorPicker = props => {
+export const ColorPicker = (props: any) => {
 	const {
 		field: { value, name },
 		form: { setFieldValue },
 	} = props;
 
-	const setValue = newValue => setFieldValue(name, newValue.hex);
+	const setValue = (newValue: any) => setFieldValue(name, newValue.hex);
 
 	return (
 		<SketchPicker

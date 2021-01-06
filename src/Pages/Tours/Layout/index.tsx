@@ -1,7 +1,8 @@
 import { Box, makeStyles } from '@material-ui/core';
+import React, { Children } from 'react';
+
 import { AppBar } from 'Components/AppBar';
 import Footer from 'Components/Footer';
-import React from 'react';
 
 const useStyles = makeStyles(theme => {
 	const { palette } = theme;
@@ -42,9 +43,9 @@ const Layout: React.FC = props => {
 	const classes = useStyles();
 
 	return (
-		<Box id="top" bgcolor="common.white" className={classes.root}>
+		<Box bgcolor="common.white" className={classes.root} id="top">
 			<AppBar />
-			{React.Children.only(children)}
+			{Children.only(children)}
 			<Footer />
 		</Box>
 	);

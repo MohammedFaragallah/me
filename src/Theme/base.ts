@@ -1,5 +1,6 @@
 import { SimplePaletteColorOptions } from '@material-ui/core/styles/createPalette';
 import color from 'color';
+
 import { Direction } from 'localization/types';
 
 const colorToPalette = (

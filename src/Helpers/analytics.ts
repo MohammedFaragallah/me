@@ -1,8 +1,9 @@
 import 'autotrack';
 
 import * as Sentry from '@sentry/browser';
-import { PRODUCTION } from 'Constants';
 import ReactGA from 'react-ga';
+
+import { PRODUCTION } from 'Constants';
 
 const { NODE_ENV, REACT_APP_ANALYTICS_API_KEY = '' } = process.env;
 

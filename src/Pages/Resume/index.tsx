@@ -6,17 +6,18 @@ import {
 	Typography,
 	makeStyles,
 } from '@material-ui/core';
-import { Page } from 'Components';
 import React from 'react';
+
+import { Page } from 'Components';
 
 import { IconItem } from './IconItem';
 import call from './Icons/Call_cw.png';
 import domain from './Icons/Domain_cq.png';
 import email from './Icons/Email_ct.png';
 import facebook from './Icons/FB.png';
-import linkedin from './Icons/linkedin.png';
 import place from './Icons/Place_cn.png';
 import twitter from './Icons/Twitter_s.png';
+import linkedin from './Icons/linkedin.png';
 import { InterestItem } from './InterestItem';
 import { PersonalItem } from './PersonalItem';
 import { ProfileItem } from './ProfileItem';
@@ -91,35 +92,35 @@ const Resume = () => {
 			<Container>
 				<Grid container>
 					<Grid
+						className={classes.leftSide}
 						component={Box}
 						display="flex"
 						flexDirection="column"
-						p={2}
 						height="100%"
 						item
 						md={4}
-						className={classes.leftSide}
+						p={2}
 					>
-						<SideBlock label="Contact" data={contacts} item={IconItem} />
-						<SideBlock label="Personal" data={personal} item={PersonalItem} />
-						<SideBlock label="Profile" data={profile} item={ProfileItem} />
-						<SideBlock label="Interests" data={interests} item={InterestItem} />
+						<SideBlock data={contacts} item={IconItem} label="Contact" />
+						<SideBlock data={personal} item={PersonalItem} label="Personal" />
+						<SideBlock data={profile} item={ProfileItem} label="Profile" />
+						<SideBlock data={interests} item={InterestItem} label="Interests" />
 						<SideBlock
-							label="Connect"
 							data={connects}
 							item={IconItem}
+							label="Connect"
 							style={{ marginTop: 'auto' }}
 						/>
 					</Grid>
 					<Grid
-						item
-						md={8}
+						className={classes.rightSide}
 						component={Box}
 						display="flex"
 						flexDirection="column"
-						p={2}
 						height="auto"
-						className={classes.rightSide}
+						item
+						md={8}
+						p={2}
 					>
 						<Typography>M O H A M M E D F A R A G A L L A H</Typography>
 						<Typography>F U L L S T A C K W E B D E V E L O P E R</Typography>

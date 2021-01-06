@@ -1,9 +1,10 @@
 import { Box, Grid, Typography, makeStyles } from '@material-ui/core';
 import color from 'color';
-import { Icon, Section } from 'Components';
-import data from 'myData.json';
 import React from 'react';
 import { Parallax } from 'react-parallax';
+
+import { Icon, Section } from 'Components';
+import data from 'myData.json';
 
 const useStyles = makeStyles(theme => {
 	const { spacing, palette } = theme;
@@ -25,7 +26,7 @@ const useStyles = makeStyles(theme => {
 			backgroundAttachment: 'fixed',
 			backgroundRepeat: 'no-repeat',
 			backgroundImage: `linear-gradient(to right bottom,
-				${color(palette.primary.dark)}, 
+				${color(palette.primary.dark)},
 				${color(palette.primary.main)}),
 				url(${require('assets/images/nat-5.jpg')})`,
 			backgroundSize: 'cover',
@@ -40,11 +41,11 @@ const About = () => {
 	return (
 		<Section id="about">
 			<Box
-				mb={2}
+				color="grey.A700"
 				fontSize={10}
 				fontWeight={500}
 				letterSpacing={5}
-				color="grey.A700"
+				mb={2}
 			>
 				ABOUT ME
 			</Box>
@@ -59,7 +60,7 @@ const About = () => {
 			</Box>
 			<Box my={6}>
 				{data.personalInformation.summary.map(sum => (
-					<Typography key={sum} color="textSecondary">
+					<Typography color="textSecondary" key={sum}>
 						{sum}
 					</Typography>
 				))}
@@ -67,10 +68,10 @@ const About = () => {
 					<Box
 						color="grey.A700"
 						fontSize={18}
-						mb={4}
 						fontWeight={700}
 						letterSpacing={5}
 						lineHeight={1.8}
+						mb={4}
 					>
 						I BUILD!
 					</Box>
@@ -95,17 +96,17 @@ const About = () => {
 								label: 'Data Visualizations',
 							},
 						].map(({ color, icon, label }) => (
-							<Grid key={label} item md={3}>
+							<Grid item key={label} md={3}>
 								<Box
-									className={classes.parent}
 									boxShadow="0px 0px 56px -8px rgba(0,0,0,0.17)"
+									className={classes.parent}
+									p={2}
 									style={{
 										color: 'white',
 										borderBottom: `2px solid ${color}`,
 									}}
-									p={2}
 								>
-									<Icon size="large" style={{ color }} className={classes.icon}>
+									<Icon className={classes.icon} size="large" style={{ color }}>
 										{icon}
 									</Icon>
 									<Typography>{label}</Typography>
@@ -116,16 +117,16 @@ const About = () => {
 				</Box>
 			</Box>
 			<Parallax
-				blur={2}
 				bgImage={require('assets/images/pens.jpg')}
+				blur={2}
 				strength={1000}
 			>
 				<Box p={4} position="relative">
 					<Box
+						className={classes.btnDownload}
+						fontFamily="Brothers"
 						fontSize={18}
 						fontWeight={300}
-						fontFamily="Brothers"
-						className={classes.btnDownload}
 					>
 						Hire me
 					</Box>

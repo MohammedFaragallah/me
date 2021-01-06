@@ -27,8 +27,8 @@ export const IconItem = (props: Props) => {
 	const classes = useStyles();
 
 	return (
-		<ListItem button disableGutters className={classes.contactItem}>
-			<img src={icon} alt={alt} width={25} />
+		<ListItem button className={classes.contactItem} disableGutters>
+			<img alt={alt} src={icon} width={25} />
 			<Typography className={classes.contactItemText}>{text}</Typography>
 		</ListItem>
 	);

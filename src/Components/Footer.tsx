@@ -66,8 +66,8 @@ const Footer = () => {
 			<Container>
 				<Box className={classes.logoBox}>
 					<img
-						className={classes.logo}
 						alt="Full logo"
+						className={classes.logo}
 						src={require('assets/images/logo-green-small-1x.png')}
 					/>
 				</Box>
@@ -77,7 +77,7 @@ const Footer = () => {
 							<ul className={classes.list}>
 								<Times times={5}>
 									<li className={classes.listItem}>
-										<Link href="/" className={classes.link}>
+										<Link className={classes.link} href="/">
 											Company
 										</Link>
 									</li>
@@ -88,7 +88,7 @@ const Footer = () => {
 					<Grid item lg={6}>
 						<p className={classes.copyright}>
 							Built by{' '}
-							<Link href="/" className={classes.link}>
+							<Link className={classes.link} href="/">
 								Mohammed Faragallah
 							</Link>{' '}
 						</p>

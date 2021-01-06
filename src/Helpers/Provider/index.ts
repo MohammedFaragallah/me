@@ -3,6 +3,7 @@ import feathers from '@feathersjs/feathers';
 import rest from '@feathersjs/rest-client';
 import axios from 'axios';
 import axiosRetry from 'axios-retry';
+
 import { JWT_COOKIE } from 'Constants';
 
 import pro from './newDataProvider';

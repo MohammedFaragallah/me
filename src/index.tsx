@@ -1,16 +1,17 @@
 import loadable from '@loadable/component';
 import { CircularProgress, CssBaseline } from '@material-ui/core';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import * as serviceWorker from 'serviceWorker';
+
 import { store } from 'Store';
+import * as serviceWorker from 'serviceWorker';
 
 const App = loadable(() => import('App'), {
 	fallback: <CircularProgress color="secondary" />,
 });
 
-ReactDOM.render(
+render(
 	<Provider store={store}>
 		<CssBaseline />
 		<App />

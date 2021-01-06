@@ -23,10 +23,10 @@ const sounds: Sound[] = [
 const DrumKit = () => {
 	return (
 		<Box
-			display="flex"
-			justifyContent="space-around"
 			alignItems="center"
+			display="flex"
 			height="80vh"
+			justifyContent="space-around"
 		>
 			{sounds.map(sound => (
 				<Player key={sound.key} sound={sound} />

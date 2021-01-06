@@ -1,27 +1,28 @@
 import { Box, Grid } from '@material-ui/core';
+import React from 'react';
+
 import { Section } from 'Components';
 import Project from 'Components/ProjectCard';
-import React from 'react';
 
 const Work = () => {
 	return (
 		<Section id="work">
 			<Box
-				mb={2}
+				color="grey.A700"
 				fontSize={10}
 				fontWeight={500}
 				letterSpacing={5}
-				color="grey.A700"
+				mb={2}
 			>
 				My Work
 			</Box>
 			<Box
 				color="grey.A700"
 				fontSize={18}
-				mb={4}
 				fontWeight={700}
 				letterSpacing={5}
 				lineHeight={1.8}
+				mb={4}
 			>
 				Some Projects I managed to cleanup for presentation
 			</Box>

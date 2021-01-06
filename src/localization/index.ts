@@ -12,7 +12,7 @@ export const DefaultLanguage: Language = {
 };
 
 export const getTranslatedMessages = (languageCode: Language['code']): object =>
-	Object.assign({}, require(`localization/messages/${languageCode}`));
+	Object.assign({}, import(`localization/messages/${languageCode}`));
 
 export const getLocale = (languageCode: Language['code']) =>
 	localizationLanguages[languageCode];

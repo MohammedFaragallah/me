@@ -1,8 +1,9 @@
 import { Container, Link } from '@material-ui/core';
-import { CenteredMessage } from 'Components';
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { FormattedMessage, injectIntl } from 'react-intl';
+
+import { CenteredMessage } from 'Components';
 
 class Boundary extends Component<any> {
 	state = { error: null, info: null };
@@ -51,11 +52,11 @@ class Boundary extends Component<any> {
 					</Helmet>
 					<CenteredMessage>
 						<FormattedMessage
-							id="label.error"
 							defaultMessage="Something went wrong"
+							id="label.error"
 						/>
-						<Link underline="none" color="textPrimary" href="/">
-							<FormattedMessage id="label.go.home" defaultMessage="Go Home" />
+						<Link color="textPrimary" href="/" underline="none">
+							<FormattedMessage defaultMessage="Go Home" id="label.go.home" />
 						</Link>
 					</CenteredMessage>
 				</Container>

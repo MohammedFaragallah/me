@@ -1,15 +1,16 @@
 import { Box, Container, Grid } from '@material-ui/core';
+import React from 'react';
+
 import SectionHeading from 'Components/SectionHeading';
 import ServiceCard from 'Components/ServiceCard';
 import Times from 'Components/Times';
-import React from 'react';
 
 const Services = () => {
 	return (
 		<Box
-			id="services"
-			component="section"
 			bgcolor="grey.200"
+			component="section"
+			id="services"
 			mt="-10vh"
 			py={25}
 		>

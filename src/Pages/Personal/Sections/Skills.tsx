@@ -1,7 +1,8 @@
 import { Box, Typography, makeStyles } from '@material-ui/core';
-import { Section } from 'Components';
 import { plural } from 'pluralize';
 import React from 'react';
+
+import { Section } from 'Components';
 import skills from 'skills.json';
 
 const useStyles = makeStyles(theme => {
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => {
 	};
 });
 
-interface Item {
+export interface Item {
 	name: string;
 	shortname: string;
 	url: string;
@@ -34,7 +35,12 @@ interface Item {
 	type: string;
 }
 
-type Category = 'framework' | 'service' | 'tool' | 'language' | 'database';
+export type Category =
+	| 'framework'
+	| 'service'
+	| 'tool'
+	| 'language'
+	| 'database';
 
 const Skills = () => {
 	const classes = useStyles();
@@ -42,21 +48,21 @@ const Skills = () => {
 	return (
 		<Section id="skills">
 			<Box
-				mb={2}
+				color="grey.A700"
 				fontSize={10}
 				fontWeight={500}
 				letterSpacing={5}
-				color="grey.A700"
+				mb={2}
 			>
 				Skills
 			</Box>
 			<Box
 				color="grey.A700"
 				fontSize={18}
-				mb={4}
 				fontWeight={700}
 				letterSpacing={5}
 				lineHeight={1.8}
+				mb={4}
 			>
 				Technologies I've worked with
 			</Box>
@@ -67,7 +73,7 @@ const Skills = () => {
 							<Typography className={classes.headerQoute}>
 								{plural(category).toUpperCase()}
 							</Typography>
-							<Box display="flex" justifyContent="space-around" flexWrap="wrap">
+							<Box display="flex" flexWrap="wrap" justifyContent="space-around">
 								{/* {skills[category].map((item: Item) => {
 									return (
 										<Link

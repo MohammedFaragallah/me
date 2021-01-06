@@ -49,15 +49,15 @@ const PricingWithToggle = () => {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Box display="flex" flexDirection="column" alignItems="center">
+			<Box alignItems="center" display="flex" flexDirection="column">
 				<Typography>Our Pricing</Typography>
 				<Toggle />
 				<Box
+					alignItems="center"
 					display="flex"
 					flexDirection="row"
 					flexWrap="wrap"
 					justifyContent="center"
-					alignItems="center"
 					margin="0 auto"
 					width="100%"
 				>

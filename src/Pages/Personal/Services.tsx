@@ -1,6 +1,7 @@
 import { Box, Grid, Typography, makeStyles } from '@material-ui/core';
-import { Icon } from 'Components';
 import React from 'react';
+
+import { Icon } from 'Components';
 
 const services = [
 	{
@@ -66,49 +67,49 @@ const Services = () => {
 
 	return (
 		<Box
-			id="services"
-			minHeight="100vh"
 			component="section"
-			mb={10}
 			display="flex"
 			flexDirection="column"
+			id="services"
 			justifyContent="center"
+			mb={10}
+			minHeight="100vh"
 			p={{ md: 6, xs: 3 }}
 		>
 			<Box
-				mb={2}
+				color="grey.A700"
 				fontSize={10}
 				fontWeight={500}
 				letterSpacing={5}
-				color="grey.A700"
+				mb={2}
 			>
 				ABOUT ME
 			</Box>
 			<Box
 				color="grey.A700"
 				fontSize={18}
-				mb={4}
 				fontWeight={700}
 				letterSpacing={5}
 				lineHeight={1.8}
+				mb={4}
 			>
 				WHO AM I?
 			</Box>
 			<Grid container spacing={4}>
 				{services.map(({ color, icon, label, details }) => (
-					<Grid key={color} item md={4}>
+					<Grid item key={color} md={4}>
 						<Box
-							boxShadow="0px 0px 56px -8px rgba(0,0,0,0.17)"
 							bgcolor="background.paper"
+							boxShadow="0px 0px 56px -8px rgba(0,0,0,0.17)"
+							p={2}
 							style={{
 								borderBottom: `2px solid ${color}`,
 							}}
-							p={2}
 						>
 							<Icon
-								style={{ backgroundColor: color, color: 'white' }}
-								size="large"
 								className={classes.icon}
+								size="large"
+								style={{ backgroundColor: color, color: 'white' }}
 							>
 								{icon}
 							</Icon>

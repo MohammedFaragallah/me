@@ -28,7 +28,7 @@ export const PersonalItem = (props: Props) => {
 
 	return (
 		<>
-			<ListItem button disableGutters className={classes.personalItem}>
+			<ListItem button className={classes.personalItem} disableGutters>
 				<Typography className={classes.personalItemText}>{title}</Typography>
 				<Typography className={classes.personalItemText}>: {text}</Typography>
 			</ListItem>

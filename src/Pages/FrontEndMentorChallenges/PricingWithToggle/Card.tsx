@@ -46,17 +46,17 @@ export const Card: React.FC<CardData> = props => {
 	return (
 		<Paper className={classes.root}>
 			<Box
+				alignItems="center"
 				display="flex"
 				flexDirection="column"
 				justifyContent="center"
-				alignItems="center"
 			>
 				<Box fontWeight={700}>{title}</Box>
-				<Box display="flex" alignItems="center">
-					<Box fontWeight={700} className={classes.dollar}>
+				<Box alignItems="center" display="flex">
+					<Box className={classes.dollar} fontWeight={700}>
 						$
 					</Box>
-					<Box fontWeight={900} className={classes.price}>
+					<Box className={classes.price} fontWeight={900}>
 						{price.annually}
 					</Box>
 				</Box>

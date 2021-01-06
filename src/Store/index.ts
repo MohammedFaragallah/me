@@ -1,6 +1,4 @@
 import { connectRouter, routerMiddleware } from 'connected-react-router';
-import { DEVELOPMENT } from 'Constants';
-import { dataProvider, history } from 'Helpers';
 import { adminReducer, adminSaga } from 'react-admin';
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import { persistReducer, persistStore } from 'redux-persist';
@@ -8,6 +6,9 @@ import storage from 'redux-persist/lib/storage';
 import createSagaMiddleware from 'redux-saga';
 import { all, fork } from 'redux-saga/effects';
 import thunk from 'redux-thunk';
+
+import { DEVELOPMENT } from 'Constants';
+import { dataProvider, history } from 'Helpers';
 import { localeReducer, uiReducer } from 'Store/Reducers';
 import { StoreState } from 'Store/types';
 

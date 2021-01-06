@@ -6,10 +6,11 @@ import {
 	makeStyles,
 } from '@material-ui/core';
 import color from 'color';
+import React from 'react';
+
 import HoverLink from 'Components/HoverLink';
 import SectionHeading from 'Components/SectionHeading';
 import Times from 'Components/Times';
-import React from 'react';
 
 const useStyles = makeStyles(theme => {
 	const { spacing, palette } = theme;
@@ -94,15 +95,15 @@ const Testimonials = () => {
 
 	return (
 		<Box
+			bgcolor="grey.200"
+			component="section"
 			id="testimonials"
 			position="relative"
-			component="section"
-			bgcolor="grey.200"
 			py={10}
 			zIndex={0}
 		>
 			<Box className={classes.bgVideo}>
-				<video className={classes.content} autoPlay muted loop>
+				<video autoPlay className={classes.content} loop muted>
 					<source src={require('assets/images/video.mp4')} type="video/mp4" />
 					Your browser is not supported!
 				</video>
@@ -116,12 +117,12 @@ const Testimonials = () => {
 						display="flex"
 						flexDirection="row"
 					>
-						<Box component="figure" className={classes.avatar}>
+						<Box className={classes.avatar} component="figure">
 							<img
-								src={require('assets/images/keyboard.jpg')}
 								alt="demo"
-								width="100%"
 								height="100%"
+								src={require('assets/images/keyboard.jpg')}
+								width="100%"
 							/>
 							<Box className={classes.caption} component="figcaption">
 								SHIRT
@@ -140,8 +141,8 @@ const Testimonials = () => {
 					</Box>
 				</Times>
 				<HoverLink
-					label="Read all stories &rarr;"
 					className={classes.storiesLink}
+					label="Read all stories &rarr;"
 				/>
 			</Box>
 		</Box>

@@ -1,7 +1,8 @@
 import { Typography } from '@material-ui/core';
-import { CenteredMessage, Page } from 'Components';
 import React from 'react';
 import { useIntl } from 'react-intl';
+
+import { CenteredMessage, Page } from 'Components';
 
 const NotFound = () => {
 	const intl = useIntl();

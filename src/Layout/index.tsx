@@ -1,5 +1,5 @@
 import { Box, makeStyles } from '@material-ui/core';
-import React from 'react';
+import React, { Children } from 'react';
 
 const useStyles = makeStyles(theme => {
 	const { palette } = theme;
@@ -37,8 +37,8 @@ export const Layout: React.FC = props => {
 	const classes = useStyles();
 
 	return (
-		<Box id="top" bgcolor="common.white" className={classes.root}>
-			{React.Children.only(children)}
+		<Box bgcolor="common.white" className={classes.root} id="top">
+			{Children.only(children)}
 		</Box>
 	);
 };

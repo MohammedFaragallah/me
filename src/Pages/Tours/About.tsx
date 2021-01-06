@@ -7,10 +7,11 @@ import {
 } from '@material-ui/core';
 import clsx from 'clsx';
 import color from 'color';
+import React from 'react';
+
 import HoverLink from 'Components/HoverLink';
 import SectionHeading from 'Components/SectionHeading';
 import Times from 'Components/Times';
-import React from 'react';
 
 const useStyles = makeStyles(theme => {
 	const { spacing, palette } = theme;
@@ -63,7 +64,7 @@ const About = () => {
 	const classes = useStyles();
 
 	return (
-		<Box id="about" component="section" bgcolor="grey.200" mt="-20vh" py={30}>
+		<Box bgcolor="grey.200" component="section" id="about" mt="-20vh" py={30}>
 			<Container>
 				<SectionHeading label="Exciting tours for adventurous people" />
 				<Grid container spacing={2}>
@@ -83,19 +84,19 @@ const About = () => {
 					</Grid>
 					<Grid className={classes.composition} item md={6} xs={12}>
 						<img
-							src={require('assets/images/nat-1-large.jpg')}
 							alt="first 1"
 							className={clsx(classes.image, classes.firstImage)}
+							src={require('assets/images/nat-1-large.jpg')}
 						/>
 						<img
-							src={require('assets/images/nat-2-large.jpg')}
 							alt="first 2"
 							className={clsx(classes.image, classes.secondImage)}
+							src={require('assets/images/nat-2-large.jpg')}
 						/>
 						<img
-							src={require('assets/images/nat-3-large.jpg')}
 							alt="first 3"
 							className={clsx(classes.image, classes.thirdImage)}
+							src={require('assets/images/nat-3-large.jpg')}
 						/>
 					</Grid>
 				</Grid>

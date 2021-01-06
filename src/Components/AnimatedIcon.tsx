@@ -8,6 +8,15 @@ import animationData from './AnimatedDownload.json';
 export const AnimatedIcon = () => {
 	return (
 		<Lottie
+			eventListeners={[
+				{
+					eventName: 'loopComplete',
+					callback: () => console.log('loopComplete'),
+				},
+			]}
+			height={25}
+			isPaused={false}
+			isStopped={false}
 			options={{
 				loop: true,
 				autoplay: true,
@@ -16,16 +25,7 @@ export const AnimatedIcon = () => {
 					preserveAspectRatio: 'xMidYMid slice',
 				},
 			}}
-			height={25}
 			width={25}
-			isStopped={false}
-			isPaused={false}
-			eventListeners={[
-				{
-					eventName: 'loopComplete',
-					callback: () => console.log('loopComplete'),
-				},
-			]}
 		/>
 	);
 };

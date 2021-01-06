@@ -1,6 +1,7 @@
-import { useStyles } from 'Pages/Javascript30/DrumKit/Styles';
 import React, { useEffect, useState } from 'react';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
+
+import { useStyles } from 'Pages/Javascript30/DrumKit/Styles';
 
 import { Sound } from './index';
 
@@ -14,7 +15,8 @@ const useAudio = (url: string): [boolean, () => void] => {
 	};
 
 	useEffect(() => {
-		playing ? audio.play() : audio.pause();
+		if (playing) audio.play();
+		else audio.pause();
 	}, [audio, playing]);
 
 	useEffect(() => {
@@ -42,7 +44,8 @@ const Player = (props: Props) => {
 	const classes = useStyles({ playing });
 
 	return (
-		<div onClick={toggle} className={classes.key}>
+		// eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
+		<div className={classes.key} onClick={toggle}>
 			<span>{key.toUpperCase()}</span>
 			<span className={classes.sound}>{name.toUpperCase()}</span>
 			<KeyboardEventHandler handleKeys={[key]} onKeyEvent={toggle} />

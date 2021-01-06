@@ -1,9 +1,10 @@
 import { Box, Button, Slide, Typography, makeStyles } from '@material-ui/core';
 import color from 'color';
+import React from 'react';
+
 import { Link } from 'Components';
 import { barHeight } from 'Constants';
 import Data from 'myData.json';
-import React from 'react';
 
 const useStyles = makeStyles(theme => {
 	const { palette, spacing } = theme;
@@ -108,7 +109,7 @@ const Header = () => {
 					</Slide>
 				</Typography>
 				<Slide direction="up" in timeout={1000}>
-					<Button variant="contained" className={classes.callToAction}>
+					<Button className={classes.callToAction} variant="contained">
 						<Link to="/resume">Resume</Link>
 					</Button>
 				</Slide>

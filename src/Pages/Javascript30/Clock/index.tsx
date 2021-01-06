@@ -39,14 +39,14 @@ const useStyles = makeStyles<Theme, StyleProps>({
 		transform: `rotate(${(now.getSeconds() / 60) * 360 + 90}deg)`,
 	}),
 	minutesHand: ({ now }) => ({
-		transform: `rotate(${(now.getMinutes() / 60) * 360 +
-			(now.getSeconds() / 60) * 6 +
-			90}deg)`,
+		transform: `rotate(${
+			(now.getMinutes() / 60) * 360 + (now.getSeconds() / 60) * 6 + 90
+		}deg)`,
 	}),
 	hoursHand: ({ now }) => ({
-		transform: `rotate(${(now.getHours() / 12) * 360 +
-			(now.getMinutes() / 60) * 6 +
-			90}deg)`,
+		transform: `rotate(${
+			(now.getHours() / 12) * 360 + (now.getMinutes() / 60) * 6 + 90
+		}deg)`,
 	}),
 });
 

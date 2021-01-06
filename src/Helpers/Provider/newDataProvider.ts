@@ -1,4 +1,6 @@
 import { Application, Params as FeathersParams } from '@feathersjs/feathers';
+import { DataProvider, GetOneResult, Record, UpdateParams } from 'ra-core';
+
 import {
 	CREATE,
 	DELETE,
@@ -10,14 +12,13 @@ import {
 	UPDATE,
 	UPDATE_MANY,
 } from 'Constants';
-import { DataProvider, GetOneResult, Record, UpdateParams } from 'ra-core';
 
 const defaultIdKey = 'id';
 
 const idKey = 'id';
 
 const deleteProp = (obj: object, prop: string) => {
-	let res: { [ket: string]: any } = Object.assign({}, obj);
+	const res: { [ket: string]: any } = Object.assign({}, obj);
 	delete res[prop];
 	return res;
 };
@@ -39,13 +40,10 @@ const getOrder = (order: string) => {
 	return order;
 };
 
-export default (app: Application): DataProvider => {
+const dataProvider = (app: Application): DataProvider => {
 	return {
 		[GET_ONE]: (resource, params) =>
-			app
-				.service(resource)
-				.get(params.id)
-				.then(mapRes),
+			app.service(resource).get(params.id).then(mapRes),
 
 		[GET_MANY]: (resource, params) => {
 			const ids = params.ids || [];
@@ -83,10 +81,7 @@ export default (app: Application): DataProvider => {
 					? deleteProp(params.data, defaultIdKey)
 					: params.data;
 
-			return app
-				.service(resource)
-				.update(params.id, data)
-				.then(mapRes);
+			return app.service(resource).update(params.id, data).then(mapRes);
 		},
 
 		[UPDATE_MANY]: (resource, params) => {
@@ -110,10 +105,7 @@ export default (app: Application): DataProvider => {
 		},
 
 		[DELETE]: (resource, params) => {
-			return app
-				.service(resource)
-				.remove(params.id)
-				.then(mapRes);
+			return app.service(resource).remove(params.id).then(mapRes);
 		},
 
 		[DELETE_MANY]: (resource, params) => {
@@ -149,3 +141,5 @@ export default (app: Application): DataProvider => {
 		},
 	};
 };
+
+export default dataProvider;

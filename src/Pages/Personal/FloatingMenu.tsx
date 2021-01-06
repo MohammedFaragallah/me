@@ -4,6 +4,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useSelector } from 'react-redux';
 import Scrollspy from 'react-scrollspy';
+
 import { StoreState } from 'Store';
 
 const useStyles = makeStyles(theme => {
@@ -46,8 +47,8 @@ export const FloatingMenu: React.FC<Props> = () => {
 	return (
 		<Scrollspy
 			componentTag="span"
-			items={navLinks.map(item => item.toLowerCase())}
 			currentClassName={classes.active}
+			items={navLinks.map(item => item.toLowerCase())}
 			style={{
 				position: 'fixed',
 				bottom: 30,
@@ -56,9 +57,9 @@ export const FloatingMenu: React.FC<Props> = () => {
 		>
 			{navLinks.map(link => (
 				<AnchorLink
-					key={link}
 					className={classes.navLink}
 					href={`#${link.toLowerCase()}`}
+					key={link}
 				/>
 			))}
 		</Scrollspy>

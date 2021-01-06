@@ -1,10 +1,11 @@
 import { Box, Grid, makeStyles } from '@material-ui/core';
+import color from 'color';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useSelector } from 'react-redux';
 import Scrollspy from 'react-scrollspy';
+
 import { StoreState } from 'Store';
-import color from 'color';
 
 const useStyles = makeStyles(theme => {
 	const { palette, spacing } = theme;
@@ -75,7 +76,7 @@ export const Menu: React.FC<Props> = () => {
 		>
 			<Box pt={4}>
 				<Box className={classes.avatar} />
-				<Box textAlign="center" fontWeight={700}>
+				<Box fontWeight={700} textAlign="center">
 					Mohammed Faragallah
 				</Box>
 				<Box textAlign="center">Software Engineer</Box>
@@ -83,14 +84,14 @@ export const Menu: React.FC<Props> = () => {
 			<Box textAlign="center">
 				<Scrollspy
 					componentTag="span"
-					items={navLinks.map(item => item.toLowerCase())}
 					currentClassName={classes.active}
+					items={navLinks.map(item => item.toLowerCase())}
 				>
 					{navLinks.map(link => (
 						<AnchorLink
-							key={link}
 							className={classes.navLink}
 							href={`#${link.toLowerCase()}`}
+							key={link}
 						>
 							{link.toUpperCase()}
 						</AnchorLink>

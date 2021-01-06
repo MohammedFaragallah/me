@@ -6,6 +6,8 @@ import {
 	makeStyles,
 	SwipeableDrawer,
 } from '@material-ui/core';
+import React, { useState } from 'react';
+
 import { Icon, Page } from 'Components';
 import { DEVELOPMENT } from 'Constants';
 import { Menu } from 'Pages/Personal/Menu';
@@ -13,7 +15,7 @@ import About from 'Pages/Personal/Sections/About';
 import Home from 'Pages/Personal/Sections/Home';
 import Skills from 'Pages/Personal/Sections/Skills';
 import Work from 'Pages/Personal/Sections/Work';
-import React, { useState } from 'react';
+
 import { FloatingMenu } from './FloatingMenu';
 
 const useStyles = makeStyles(theme => {
@@ -36,7 +38,7 @@ const Personal = () => {
 
 	return (
 		<Page>
-			<Grid component={Container} style={{ padding: 0 }} container>
+			<Grid component={Container} container style={{ padding: 0 }}>
 				<Hidden mdUp>
 					<Icon className={classes.menu} onClick={() => setMenuOpened(true)}>
 						menu

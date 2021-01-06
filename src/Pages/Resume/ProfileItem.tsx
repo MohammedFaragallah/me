@@ -47,7 +47,7 @@ export const ProfileItem = (props: Props) => {
 	const classes = useStyles();
 
 	return (
-		<ListItem button disableGutters className={classes.profileItem}>
+		<ListItem button className={classes.profileItem} disableGutters>
 			<Typography className={classes.title}>{title}</Typography>
 			<LinearProgress
 				classes={{ root: classes.root, bar: classes.bar }}

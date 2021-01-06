@@ -12,7 +12,7 @@ const detectColors = (text: string) => {
 	//? source https://github.com/egonyans/vscode-ext-color-highlight
 	const colorFunctions = /((rgb|hsl)a?\([\d]{1,3}%?,\s*[\d]{1,3}%?,\s*[\d]{1,3}%?(,\s*\d?\.?\d+)?\))/gi;
 	let match = colorFunctions.exec(text);
-	let result = [];
+	const result = [];
 	while (match !== null) {
 		const start = match.index;
 		const end = colorFunctions.lastIndex;
@@ -32,7 +32,7 @@ const MaterialUiShadows = () => {
 		<Grid container spacing={2}>
 			{shadows.map(shadow => {
 				let begin = 0;
-				let newText = [];
+				const newText = [];
 				const colors = detectColors(shadow);
 
 				colors.length
@@ -40,8 +40,8 @@ const MaterialUiShadows = () => {
 							newText.push(shadow.substring(begin, start));
 							newText.push(
 								<Typography
-									key={color}
 									component="span"
+									key={color}
 									style={{ backgroundColor: color }}
 								>
 									{color}
@@ -52,7 +52,7 @@ const MaterialUiShadows = () => {
 					: newText.push(shadow);
 
 				return (
-					<Grid key={shadow} item md={6}>
+					<Grid item key={shadow} md={6}>
 						<Card style={{ boxShadow: shadow, height: '100%' }}>
 							<CardContent>{newText}</CardContent>
 						</Card>
