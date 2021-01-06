@@ -1,3 +1,12 @@
 declare module 'react-admin';
 declare module 'react-keyboard-event-handler';
-declare module 'react-anchor-link-smooth-scroll';
+declare module 'react-anchor-link-smooth-scroll' {
+	interface Props {
+		href: string;
+		offset?: function | number;
+		onClick?: (e: Event) => void;
+		[key: string]: any;
+	}
+
+	export default class AnchorLink extends React.Component<Props> {}
+}

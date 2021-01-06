@@ -89,6 +89,11 @@ const About = () => {
 								icon: 'android',
 								label: 'Cross-platform Mobile Apps',
 							},
+							{
+								color: '#' + ((Math.random() * 0xffffff) << 0).toString(16),
+								icon: 'pie_chart',
+								label: 'Data Visualizations',
+							},
 						].map(({ color, icon, label }) => (
 							<Grid key={label} item md={3}>
 								<Box
